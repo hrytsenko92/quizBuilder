@@ -1,0 +1,143 @@
+:root {
+  --color-primary: #007bff;
+  --color-primary-dark: #0056b3;
+  --color-primary-light: #66b2ff;
+  --color-primary-rgb: 0, 123, 255;
+
+  --color-secondary: #28a745;
+  --color-secondary-dark: #1e7e34;
+
+  --color-background-primary: #f8f9fa;
+  --color-background-secondary: #ffffff;
+  --color-background-tertiary: #f0f2f5;
+
+  --color-text-primary: #333333;
+  --color-text-secondary: #555555;
+  --color-white: #ffffff;
+
+  --color-border: #dddddd;
+  --color-border-light: #eeeeee;
+  --color-input-border: #aaaaaa;
+  --color-input-background: #ffffff;
+
+  --color-danger: #dc3545;
+  --color-danger-light: #f8d7da;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  background-color: var(--color-background-primary);
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-primary);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.button-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.button-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.button-secondary {
+  background-color: var(--color-text-secondary);
+  color: var(--color-white);
+}
+
+.button-secondary:hover {
+  background-color: #4a4a4a;
+}
+
+.button-success {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.button-success:hover {
+  background-color: var(--color-secondary-dark);
+}
+
+.button-danger {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+}
+
+.button-danger:hover {
+  background-color: #c82333;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.space-x-4 > *:not(:first-child) {
+  margin-left: 1rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}

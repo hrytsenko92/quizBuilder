@@ -1,0 +1,29 @@
+// schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Quiz {
+  id        Int        @id @default(autoincrement())
+  title     String
+  questions Question[]
+}
+
+model Question {
+  id              Int        @id @default(autoincrement())
+  text            String
+  type            String
+
+  correctAnswer   String?
+
+  options         Json? 
+
+  quizId          Int
+  quiz            Quiz       @relation(fields: [quizId], references: [id])
+}

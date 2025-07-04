@@ -1,0 +1,53 @@
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  color: #2a61af;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  padding: 2rem;
+}
+
+.errorMessage {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #dc3545;
+  padding: 2rem;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+}
+
+.noQuizzes {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+  padding: 2rem;
+  background-color: #e9ecef;
+  border-radius: 8px;
+}
+
+.quizGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+  .quizGrid {
+    grid-template-columns: 1fr;
+  }
+}

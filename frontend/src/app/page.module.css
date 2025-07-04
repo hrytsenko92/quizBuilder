@@ -1,0 +1,38 @@
+.homeContainer {
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.homeTitle {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.homeDescription {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.homeButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .homeButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homeButtons > *:not(:first-child) {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}

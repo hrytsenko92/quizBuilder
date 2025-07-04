@@ -1,0 +1,134 @@
+.container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.quizTitle {
+  font-size: 2.8rem;
+  color: #2a61af;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  word-wrap: break-word;
+}
+
+.backButton {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: text-decoration 0.2s ease;
+}
+
+.backButton:hover {
+  text-decoration: underline;
+}
+
+.message, .errorMessage {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.errorMessage {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+.noQuestions {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #777;
+  padding: 1.5rem;
+  background-color: #e9ecef;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.questionsList {
+  margin-top: 2rem;
+}
+
+.questionCard {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.questionText {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.questionType {
+  font-size: 0.9rem;
+  color: #777;
+  font-style: italic;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.answerSection {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed #ddd;
+}
+
+.answerSection p {
+  font-weight: 500;
+  color: #444;
+}
+
+.optionsTitle {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.optionsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.optionsList li {
+  background-color: #eaf1f7;
+  border: 1px solid #d4e3ef;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  word-wrap: break-word;
+}
+
+.optionsList li.correctOption {
+  background-color: #d4edda;
+  border-color: #28a745;
+  font-weight: 500;
+  color: #155724;
+}
+
+@media (max-width: 768px) {
+  .quizTitle {
+    font-size: 2rem;
+  }
+  .questionText {
+    font-size: 1.2rem;
+  }
+  .container {
+    padding: 1rem;
+  }
+}
